@@ -10,7 +10,6 @@ describe('css', () => {
     assertType(css({ willChange: 'abc' }))
 
     assertType(css({ pos: 'absolute' }))
-    // @ts-expect-error always expected
     assertType(css({ pos: 'absolute123' }))
     // @ts-expect-error expected from strictTokens: true
     assertType(css({ flex: '0 1' }))
